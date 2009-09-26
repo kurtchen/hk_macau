@@ -1,0 +1,101 @@
+﻿[
+  {
+    "id": "14",
+    "name": "黄大仙庙",
+    "image_url": "photo/daytwo/hdx.jpg",
+    "description": "黄大仙庙",
+    "latitude": "22.343268556904317",
+    "longitude": "114.19339656829834",
+    "zoom": "15"
+  },
+  {
+    "id": "15",
+    "name": "珠宝展示中心",
+    "image_url": "photo/daytwo/jewelry.jpg",
+    "description": "珠宝展示中心",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "16",
+    "name": "百货店",
+    "image_url": "photo/daytwo/store.jpg",
+    "description": "百货店",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "17",
+    "name": "午餐",
+    "image_url": "photo/daytwo/lunch.jpg",
+    "description": "午餐",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "18",
+    "name": "DFS",
+    "image_url": "photo/daytwo/dfs.jpg",
+    "description": "DFS",
+    "latitude": "22.29681708367642",
+    "longitude": "114.16930228471756",
+    "zoom": "18"
+  },
+  {
+    "id": "19",
+    "name": "星光大道",
+    "image_url": "photo/daytwo/start.jpg",
+    "description": "星光大道",
+    "latitude": "22.293960661077",
+    "longitude": "114.17190670967102",
+    "zoom": "18"
+  },
+  {
+    "id": "20",
+    "name": "尖沙咀文化中心",
+    "image_url": "photo/daytwo/jsz.jpg",
+    "description": "尖沙咀文化中心",
+    "latitude": "22.29335015831739",
+    "longitude": "114.16998624801636",
+    "zoom": "17"
+  },
+  {
+    "id": "21",
+    "name": "大钟楼",
+    "image_url": "photo/daytwo/tower.jpg",
+    "description": "大钟楼",
+    "latitude": "22.2933997927877",
+    "longitude": "114.16951149702072",
+    "zoom": "18"
+  },
+  {
+    "id": "22",
+    "name": "海鲜大餐",
+    "image_url": "photo/daytwo/sea_food.jpg",
+    "description": "海鲜大餐",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "23",
+    "name": "维多利亚港",
+    "image_url": "photo/daytwo/victoria.jpg",
+    "description": "维多利亚港",
+    "latitude": "22.29529085297506",
+    "longitude": "114.16202545166016",
+    "zoom": "13"
+  },
+  {
+    "id": "25",
+    "name": "宾馆2",
+    "image_url": "photo/daytwo/hotel.jpg",
+    "description": "宾馆2",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  }
+]

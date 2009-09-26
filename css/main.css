@@ -1,0 +1,178 @@
+﻿body
+{
+    margin:0;
+    padding:0;
+}
+/* ---------------Tabs-------------------- */
+.TabsArea	
+{
+    overflow:hidden;
+    margin:auto;
+}
+.TabsArea .TabMenu
+{
+    position: relative;
+    top: 5px;
+    left: 2px;
+    z-index: 10;
+}
+.TabsArea .TabMenu span
+{
+    display: inline-block;
+    height: 85px;
+    width: 130px;
+    margin: 0px;
+    padding:0px;
+    font-family: "黑体","宋体",Verdana,Serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.TabsArea .TabMenu .CameraIcon
+{
+    height: 56px;
+    width: 56px;
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/* ---------------Slider-------------------- */
+#slider {
+    width: 800px;
+    margin-top: 10px;
+    position: relative;
+    border: 10px solid #ccc;
+}
+.ScrollPanes {
+    overflow: hidden;
+    height: 150px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.ScrollContainer {
+    position: relative;
+}
+.ScrollContainer img{
+    margin-top: 65px;
+}
+.ScrollContainer div{
+    float: left;
+    position: relative;
+}
+
+.ScrollContainer div.Panel {
+    padding: 10px;
+    width: 130px;
+    /*height: 318px;*/
+}
+
+.ScrollContainer .Panel .inside {
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+.ScrollContainer .Panel .inside img {
+	display: block;
+	border: 1px solid #666;
+	margin: 0 0 3px 0;
+	width: 100px;
+}
+
+.ScrollContainer .Panel .inside span {
+	font-weight: normal;
+	color: #111;
+	font-size: 12px;
+}
+
+.ScrollContainer .Panel .inside p {
+	font-size: 11px;
+	color: #ccc;
+}
+a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+}
+
+a:hover {
+	border-bottom: 1px solid #999;
+}
+
+.ScrollButtons {
+    position: absolute;
+    top: 46px;
+    cursor: pointer;
+}
+
+.ScrollButtons.left {
+    left: -45px;
+}
+
+.ScrollButtons.right {
+    right: -45px;
+}
+
+#left_shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	bottom: 0;
+	background: url(../img/leftshadow.png) repeat-y;
+}
+#right_shadow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 12px;
+	bottom: 0;
+	background: url(../img/rightshadow.png) repeat-y;
+}
+/* ---------------Map-------------------- */
+#hk_map {
+	position: relative;
+	width: 800px;
+	height: 430px;
+	border: 10px solid #ccc;
+}
+/*.TabsArea .ContentFrame
+{
+	height:206px;
+	left: 10px;
+	position: relative;
+	overflow:hidden;
+}			
+.TabsArea .ContentFrame .AllTabs
+{
+	position: relative;	
+	left:0px;		
+	width: 1190px;
+	height: 206px;
+	overflow:hidden;
+}
+.TabsArea .ContentFrame .AllTabs .TabContent
+{
+	height: 200px;
+	margin-right:20px;
+	text-align: justify;
+	float:left;
+	overflow:hidden;				
+}*/
+/*------------------Others-----------------------*/
+.hide {
+    display: none;
+}
+.selector
+{
+    background: url(../img/selector.png);
+}			
+
+.hovering
+{
+    background: url(../img/selector.png);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

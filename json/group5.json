@@ -1,0 +1,56 @@
+﻿[
+  {
+    "id": "43",
+    "name": "拱北关",
+    "image_url": "photo/dayfive/gbg.jpg",
+    "description": "拱北关",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "44",
+    "name": "情侣路",
+    "image_url": "photo/dayfive/lover.jpg",
+    "description": "情侣路",
+    "latitude": "22.26129750157242",
+    "longitude": "113.5856294631958",
+    "zoom": "14"
+  },
+  {
+    "id": "45",
+    "name": "渔女像",
+    "image_url": "photo/dayfive/fisher.jpg",
+    "description": "渔女像",
+    "latitude": "22.261793959247537",
+    "longitude": "113.58962059020996",
+    "zoom": "15"
+  },
+  {
+    "id": "46",
+    "name": "午餐5",
+    "image_url": "photo/dayfive/lunch.jpg",
+    "description": "午餐5",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "47",
+    "name": "百货店5",
+    "image_url": "photo/dayfive/store.jpg",
+    "description": "百货店5",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "48",
+    "name": "广州机场",
+    "image_url": "photo/dayfive/gz_airport.jpg",
+    "description": "广州机场",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  }
+]

@@ -1,0 +1,92 @@
+﻿[
+  {
+    "id": "27",
+    "name": "大三巴牌坊",
+    "image_url": "photo/dayfour/dsb.jpg",
+    "description": "大三巴牌坊",
+    "latitude": "22.197420997723434",
+    "longitude": "113.54090631008148",
+    "zoom": "18"
+  },
+  {
+    "id": "28",
+    "name": "妈阁庙",
+    "image_url": "photo/dayfour/mgm.jpg",
+    "description": "妈阁庙",
+    "latitude": "22.18748446661309",
+    "longitude": "113.5330581665039",
+    "zoom": "15"
+  },
+  {
+    "id": "29",
+    "name": "观音像",
+    "image_url": "photo/dayfour/gyx.jpg",
+    "description": "观音像",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "30",
+    "name": "主教山",
+    "image_url": "photo/dayfour/zjs.jpg",
+    "description": "主教山",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "31",
+    "name": "莲花广场",
+    "image_url": "photo/dayfour/lotus.jpg",
+    "description": "莲花广场",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "32",
+    "name": "午餐4",
+    "image_url": "photo/dayfour/lunch.jpg",
+    "description": "午餐4",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "33",
+    "name": "环岛游",
+    "image_url": "photo/dayfour/round.jpg",
+    "description": "环岛游",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "34",
+    "name": "选购澳门手信礼品",
+    "image_url": "photo/dayfour/sx.jpg",
+    "description": "选购澳门手信礼品",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "35",
+    "name": "娱乐场",
+    "image_url": "photo/dayfour/entertain.jpg",
+    "description": "娱乐场",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  },
+  {
+    "id": "36",
+    "name": "宾馆4",
+    "image_url": "photo/dayfour/hotel.jpg",
+    "description": "宾馆4",
+    "latitude": "",
+    "longitude": "",
+    "zoom": ""
+  }
+]

@@ -1,0 +1,27 @@
+﻿[
+  {
+    "id": "1",
+    "name": "第一天",
+    "image_url": "img/camera/camera_1.png"
+  },
+  {
+    "id": "2",
+    "name": "第二天",
+    "image_url": "img/camera/camera_2.png"
+  },
+  {
+    "id": "3",
+    "name": "第三天",
+    "image_url": "img/camera/camera_3.png"
+  },
+  {
+    "id": "4",
+    "name": "第四天",
+    "image_url": "img/camera/camera_4.png"
+  },
+  {
+    "id": "5",
+    "name": "第五天",
+    "image_url": "img/camera/camera_5.png"
+  }
+]

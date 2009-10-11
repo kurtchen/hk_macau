@@ -1,7 +1,7 @@
 ﻿$(document).ready(function(){
 	
 	// Load Google Map
-        loadGMap();
+    loadGMap();
 	
 	// Setup for Google Map
 	$("body").bind("unload", GUnload);
@@ -95,6 +95,7 @@ function setSpot(data){
     });
     
     // Init Slider
+    console.debug("calling initSlider");
     initSlider();
 }
 
@@ -118,6 +119,7 @@ function initSlider(){
     $(".right").click(function(){ navigate(true); });	
     $(".left").click(function(){ navigate(false); });
     
+    console.debug("calling moveMap");
     moveMap();
 }
 
@@ -165,8 +167,13 @@ function navigate(moving2left){
 	    .stop()
 	    .animate({"left": movement},
 		     function() {
-			$("#slider").data("currentlyMoving", false);
-			moveMap();
+                console.debug("==>"+$(".ScrollContainer").css("left"));
+                if($("#slider").data("currentlyMoving")==true)
+                {
+                    $("#slider").data("currentlyMoving", false);
+                    console.debug("Calling moveMap after animation");
+                    moveMap();
+                }
 		    });
 	    
 	// Make the previous panel to normal size
@@ -208,6 +215,8 @@ function loadGMap(){
     //map.setCenter(new GLatLng(37.4419, -122.1419), 13);
     map.setCenter(new GLatLng(31.943327048210286, 118.78591775894165), 17);
     map.setUIToDefault();
+    
+    markermanager = new MarkerManager(map);
 }
 
 /*
@@ -226,12 +235,55 @@ function moveMap(){
     if(zoom == undefined || zoom == null || zoom <= 0){
 	zoom = 15;
     }
-    //console.debug("lat="+lat+",lng="+lng+"zoom="+zoom);
+    console.debug("lat="+lat+",lng="+lng+"zoom="+zoom);
     if(map){
-        map.setZoom(parseInt(zoom));
-        map.panTo(new GLatLng(lat,lng));
+        zoom = parseInt(zoom);
+        map.setZoom(zoom);
+        //map.panTo(new GLatLng(lat,lng));
+        map.setCenter(new GLatLng(lat,lng));
+	
+        // Show Marker and the Info window
+        showMarkerAndInfo(lat,lng, zoom);
     }
     
+    return true;
+}
+
+/*
+ Show Maker on the map and show the info window.
+*/
+function showMarkerAndInfo(lat, lng, zoom){
+    if(lat == undefined || lat == null ||lat=="" || lng == undefined || lng == null || lng==""){
+	    return false;
+    }
+    
+    if(zoom == undefined || zoom == null || zoom <= 0){
+        zoom = 15;
+    }
+    
+    map.closeInfoWindow();
+
+    var marker = markermanager.getMarker(lat,lng, zoom);
+    markermanager.removeMarker(marker);
+    markermanager.addMarker(marker,zoom);
+    
+    //console.debug(markermanager.getMarkerCount(zoom));
+    
+    markermanager.refresh();
+    
+    var $curPanelImg = $("#panel_"+curPanel+" img");
+    
+    // Set the click event for the marker
+    //GEvent.addListener(marker, "click", function(){
+    //    marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");    
+    //});
+    marker.bindInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");
+
+    console.debug($curPanelImg.attr("src"));
+    //marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");
+    //GEvent.trigger(marker, "click");
+    setTimeout(function(){GEvent.trigger(marker, "click");},1000);
+
     return true;
 }
 
@@ -254,3 +306,4 @@ var maxPanel = 0;
 
 // The map
 var map;
+var markermanager;

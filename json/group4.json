@@ -22,71 +22,53 @@
     "name": "观音像",
     "image_url": "photo/dayfour/gyx.jpg",
     "description": "观音像",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   },
   {
     "id": "30",
     "name": "主教山",
     "image_url": "photo/dayfour/zjs.jpg",
     "description": "主教山",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   },
   {
     "id": "31",
     "name": "莲花广场",
     "image_url": "photo/dayfour/lotus.jpg",
     "description": "莲花广场",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
-  },
-  {
-    "id": "32",
-    "name": "午餐4",
-    "image_url": "photo/dayfour/lunch.jpg",
-    "description": "午餐4",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   },
   {
     "id": "33",
     "name": "环岛游",
     "image_url": "photo/dayfour/round.jpg",
     "description": "环岛游",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   },
   {
     "id": "34",
     "name": "选购澳门手信礼品",
     "image_url": "photo/dayfour/sx.jpg",
     "description": "选购澳门手信礼品",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   },
   {
     "id": "35",
     "name": "娱乐场",
     "image_url": "photo/dayfour/entertain.jpg",
     "description": "娱乐场",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
-  },
-  {
-    "id": "36",
-    "name": "宾馆4",
-    "image_url": "photo/dayfour/hotel.jpg",
-    "description": "宾馆4",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.190981331530466",
+    "longitude": "113.55125427246094",
+    "zoom": "16"
   }
 ]

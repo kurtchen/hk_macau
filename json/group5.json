@@ -4,9 +4,9 @@
     "name": "拱北关",
     "image_url": "photo/dayfive/gbg.jpg",
     "description": "拱北关",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.22443556792428",
+    "longitude": "113.56189727783203",
+    "zoom": "12"
   },
   {
     "id": "44",
@@ -27,30 +27,12 @@
     "zoom": "15"
   },
   {
-    "id": "46",
-    "name": "午餐5",
-    "image_url": "photo/dayfive/lunch.jpg",
-    "description": "午餐5",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
-  },
-  {
-    "id": "47",
-    "name": "百货店5",
-    "image_url": "photo/dayfive/store.jpg",
-    "description": "百货店5",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
-  },
-  {
-    "id": "48",
-    "name": "广州机场",
-    "image_url": "photo/dayfive/gz_airport.jpg",
-    "description": "广州机场",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "id": "49",
+    "name": "南京机场",
+    "image_url": "photo/dayfive/nkg.jpg",
+    "description": "南京机场",
+    "latitude": "31.78472759839612",
+    "longitude": "118.86876583099365",
+    "zoom": "15"
   }
 ]

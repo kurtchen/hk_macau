@@ -55,15 +55,17 @@ function initTabs(){
         //Add the selector class to the sender
         $(this).addClass("selector");
 	
-	// Get the spots and update the slider
-	$(".ScrollContainer").append('<img src="img/loading.gif" width="220" height="19"/>');
-	$.getJSON("json/group"+this.id.substr(this.id.lastIndexOf("_")+1)+".json", setSpot);
+        // Get the spots and update the slider
+        $(".ScrollContainer").append('<img src="img/loading.gif" width="220" height="19"/>');
+        curGroup = this.id.substr(this.id.lastIndexOf("_")+1);
+        $.getJSON("json/group"+curGroup+".json", setSpot);
     });
     
     // Init loading image for slider
     $(".ScrollContainer").append('<img src="img/loading.gif" width="220" height="19"/>');
     
     // Get First group of spots
+    curGroup = 1;
     $.getJSON("json/group1.json", setSpot);
 }
 
@@ -75,27 +77,27 @@ function setSpot(data){
     $('.ScrollContainer').empty();
     // Add the spots
     $.each(data, function(entryIdx, entry){
-	var spotHtml = '<div class="Panel" id="panel_';
-	spotHtml += (entryIdx+1);
-	spotHtml += '"><div class="inside"><img src="';
-	spotHtml += entry['image_url'];
-	spotHtml += '" alt="';
-	spotHtml += entry['description'];
-	spotHtml += '" /><span>';
-	spotHtml += entry['name'];
-	spotHtml += '</span></div></div>';
-	//alert(spotHtml);
-	$('.ScrollContainer').append(spotHtml);
-	
-	// Set Lat & Lng info
-	$("#panel_"+(entryIdx+1)).data("lat",entry["latitude"]);
-	$("#panel_"+(entryIdx+1)).data("lng",entry["longitude"]);
-	$("#panel_"+(entryIdx+1)).data("zoom",entry["zoom"]);
+        var spotHtml = '<div class="Panel" id="panel_';
+        spotHtml += (entryIdx+1);
+        spotHtml += '"><div class="inside"><img src="';
+        spotHtml += entry['image_url'];
+        spotHtml += '" alt="';
+        spotHtml += entry['description'];
+        spotHtml += '" /><span>';
+        spotHtml += entry['name'];
+        spotHtml += '</span></div></div>';
+        //alert(spotHtml);
+        $('.ScrollContainer').append(spotHtml);
+        
+        // Set Lat & Lng info
+        $("#panel_"+(entryIdx+1)).data("lat",entry["latitude"]);
+        $("#panel_"+(entryIdx+1)).data("lng",entry["longitude"]);
+        $("#panel_"+(entryIdx+1)).data("zoom",entry["zoom"]);
 	
     });
     
     // Init Slider
-    console.debug("calling initSlider");
+    //console.debug("calling initSlider");
     initSlider();
 }
 
@@ -119,7 +121,7 @@ function initSlider(){
     $(".right").click(function(){ navigate(true); });	
     $(".left").click(function(){ navigate(false); });
     
-    console.debug("calling moveMap");
+    //console.debug("calling moveMap");
     moveMap();
 }
 
@@ -167,11 +169,11 @@ function navigate(moving2left){
 	    .stop()
 	    .animate({"left": movement},
 		     function() {
-                console.debug("==>"+$(".ScrollContainer").css("left"));
+                //console.debug("==>"+$(".ScrollContainer").css("left"));
                 if($("#slider").data("currentlyMoving")==true)
                 {
                     $("#slider").data("currentlyMoving", false);
-                    console.debug("Calling moveMap after animation");
+                    //console.debug("Calling moveMap after animation");
                     moveMap();
                 }
 		    });
@@ -235,7 +237,7 @@ function moveMap(){
     if(zoom == undefined || zoom == null || zoom <= 0){
 	zoom = 15;
     }
-    console.debug("lat="+lat+",lng="+lng+"zoom="+zoom);
+    //console.debug("lat="+lat+",lng="+lng+"zoom="+zoom);
     if(map){
         zoom = parseInt(zoom);
         map.setZoom(zoom);
@@ -277,14 +279,57 @@ function showMarkerAndInfo(lat, lng, zoom){
     //GEvent.addListener(marker, "click", function(){
     //    marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");    
     //});
-    marker.bindInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");
+    marker.bindInfoWindowHtml("<div style=\"font-size:11px\"><a href=\"#\" onclick=\'getPhotos("+curGroup+","+curPanel+");return false;\'><img id=\"info_img\" src=\""+$curPanelImg.attr("src")+"\" width=\"150\"/><br/>点击查看相册</a></div>");
 
-    console.debug($curPanelImg.attr("src"));
+    //console.debug($curPanelImg.attr("src"));
     //marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");
     //GEvent.trigger(marker, "click");
     setTimeout(function(){GEvent.trigger(marker, "click");},1000);
 
     return true;
+}
+
+/*
+ Get the photos when the img in infowindow is clicked.
+*/
+function getPhotos(group, spot){
+    //console.debug("Enter getPhotos");
+    // Show waiting notice
+    $("#notice").empty().append("正在获取相册，请稍候。").css("display","inherit");
+    //console.debug("Get the photos");
+    //console.debug('json/photos_'+group+'_'+spot+'.json');
+    // Get the photos
+	$.getJSON('json/photos_'+group+'_'+spot+'.json', showLightBox);
+
+}
+
+/*
+ Show light box for the photos.
+*/
+function showLightBox(data){
+    
+    //console.debug("Enter showLightBox");
+    $("#notice").empty().css("display","none");
+
+    // Remove the previous photos
+    $("#gallery").empty();
+    // Add the photos
+    $.each(data, function(entryIdx, entry){
+        var galleryHtml = "<a href=\"";
+        galleryHtml+=entry['photo_big'];
+        galleryHtml+="\" title=\"";
+        galleryHtml+= entry['title'];
+        galleryHtml+="\"><img src=\"";
+        galleryHtml+=entry['photo_small'];
+        galleryHtml+="\" width=\"72\" height=\"72\" alt=\"\" /></a>";
+
+        //console.debug(""+galleryHtml);
+        $("#gallery").append(galleryHtml);
+    });
+    
+    // Trigger the light box
+    $('#gallery a').lightBox({txtImage:'图片',txtOf:'/'});
+    $("#gallery a:eq(0)").trigger("click");
 }
 
 // Constants for bigger panel
@@ -303,6 +348,7 @@ var step = 150;
 // Global Vars
 var curPanel = 0;
 var maxPanel = 0;
+var curGroup = 0;
 
 // The map
 var map;

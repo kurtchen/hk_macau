@@ -13,27 +13,27 @@
     "name": "珠宝展示中心",
     "image_url": "photo/daytwo/jewelry.jpg",
     "description": "珠宝展示中心",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.32662115005807",
+    "longitude": "114.2052572965622",
+    "zoom": "17"
   },
   {
     "id": "16",
     "name": "百货店",
     "image_url": "photo/daytwo/store.jpg",
     "description": "百货店",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.407854560288325",
+    "longitude": "114.15138244628906",
+    "zoom": "10"
   },
   {
     "id": "17",
     "name": "午餐",
     "image_url": "photo/daytwo/lunch.jpg",
     "description": "午餐",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.407854560288325",
+    "longitude": "114.15138244628906",
+    "zoom": "10"
   },
   {
     "id": "18",
@@ -76,9 +76,9 @@
     "name": "海鲜大餐",
     "image_url": "photo/daytwo/sea_food.jpg",
     "description": "海鲜大餐",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
+    "latitude": "22.407854560288325",
+    "longitude": "114.15138244628906",
+    "zoom": "10"
   },
   {
     "id": "23",
@@ -88,14 +88,5 @@
     "latitude": "22.29529085297506",
     "longitude": "114.16202545166016",
     "zoom": "13"
-  },
-  {
-    "id": "25",
-    "name": "宾馆2",
-    "image_url": "photo/daytwo/hotel.jpg",
-    "description": "宾馆2",
-    "latitude": "",
-    "longitude": "",
-    "zoom": ""
   }
 ]

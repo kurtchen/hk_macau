@@ -6,7 +6,12 @@
   },
   {
     "photo_big": "photo/dayone/lk_airport/lk_airport_inside.jpg",
-    "title": "睡意正浓来到机场，用小手机拍了一张",
+    "title": "睡意正浓来到机场，用手机拍了一张",
     "photo_small": "photo/dayone/lk_airport/lk_airport_inside.jpg"
+  },
+  {
+    "photo_big": "photo/dayone/lk_airport/plane.jpg",
+    "title": "起飞咯",
+    "photo_small": "photo/dayone/lk_airport/plane.jpg"
   }
 ]

@@ -13,8 +13,8 @@
     "name": "禄口机场",
     "image_url": "photo/dayone/lk_airport.jpg",
     "description": "坐飞机",
-    "latitude": "31.78472759839612",
-    "longitude": "118.86876583099365",
+    "latitude": "31.732761976442234",
+    "longitude": "118.87096289545298",
     "zoom": "15"
   },
   {
@@ -64,9 +64,9 @@
   },
   {
     "id": "8",
-    "name": "礼宾府特区",
+    "name": "礼宾府",
     "image_url": "photo/dayone/libinfu.jpg",
-    "description": "礼宾府特区",
+    "description": "礼宾府",
     "latitude": "22.27875934169057",
     "longitude": "114.15763199329376",
     "zoom": "18"
@@ -103,17 +103,17 @@
     "name": "太平山",
     "image_url": "photo/dayone/taiping.jpg",
     "description": "太平山",
-    "latitude": "22.27039232678379",
-    "longitude": "114.15189743041992",
-    "zoom": "17"
+    "latitude": "22.26328332170731",
+    "longitude": "114.15876388549805",
+    "zoom": "14"
   },
   {
     "id": "13",
     "name": "宾馆",
     "image_url": "photo/dayone/hotel.jpg",
     "description": "宾馆",
-    "latitude": "22.457657550575618",
-    "longitude": "114.00574922561646",
-    "zoom": "15"
+    "latitude": "22.45793021785494",
+    "longitude": "114.00272905826569",
+    "zoom": "17"
   }
 ]

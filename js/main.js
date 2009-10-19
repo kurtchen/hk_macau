@@ -295,7 +295,7 @@ function showMarkerAndInfo(lat, lng, zoom){
 function getPhotos(group, spot){
     //console.debug("Enter getPhotos");
     // Show waiting notice
-    $("#notice").empty().append("正在获取相册，请稍候。").css("display","inherit");
+    //$("#notice").empty().append("正在获取相册，请稍候。").css("display","inherit");
     //console.debug("Get the photos");
     //console.debug('json/photos_'+group+'_'+spot+'.json');
     // Get the photos
@@ -309,7 +309,7 @@ function getPhotos(group, spot){
 function showLightBox(data){
     
     //console.debug("Enter showLightBox");
-    $("#notice").empty().css("display","none");
+    //$("#notice").empty().css("display","none");
 
     // Remove the previous photos
     $("#gallery").empty();

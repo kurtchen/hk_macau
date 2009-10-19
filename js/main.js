@@ -279,7 +279,7 @@ function showMarkerAndInfo(lat, lng, zoom){
     //GEvent.addListener(marker, "click", function(){
     //    marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");    
     //});
-    marker.bindInfoWindowHtml("<div style=\"font-size:11px\"><a href=\"#\" onclick=\'getPhotos("+curGroup+","+curPanel+");return false;\'><img id=\"info_img\" src=\""+$curPanelImg.attr("src")+"\" width=\"150\"/><br/>点击查看相册</a></div>");
+    marker.bindInfoWindowHtml("<div style=\"font-size:11px;height:120px\"><a href=\"#\" onclick=\'getPhotos("+curGroup+","+curPanel+");return false;\'><img id=\"info_img\" src=\""+$curPanelImg.attr("src")+"\" width=\"150\"/><br/>点击查看相册</a></div>");
 
     //console.debug($curPanelImg.attr("src"));
     //marker.openInfoWindowHtml("<img src=\""+$curPanelImg.attr("src")+"\"/>");

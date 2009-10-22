@@ -213,7 +213,7 @@ function updatePanelEventHandlers(){
 */
 function loadGMap(){
     //alert("Load GMap");
-    map = new GMap2(document.getElementById("hk_map"));
+    map = new GMap2(document.getElementById("hk_map"), {size:new GSize(800,430)});
     //map.setCenter(new GLatLng(37.4419, -122.1419), 13);
     map.setCenter(new GLatLng(31.943327048210286, 118.78591775894165), 17);
     map.setUIToDefault();
